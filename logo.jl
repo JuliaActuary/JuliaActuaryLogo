@@ -11,10 +11,10 @@ function draw_full(type)
     Drawing(currentwidth, currentheight, "logo.$type")
 
     sethue(julia_red)
-    circle(Point(45, 30), 25, :fill)
+    circle(Point(40, 30), 25, :fill)
 
     sethue(julia_purple)
-    circle(Point(120, 30), 25, :fill)
+    circle(Point(115, 30), 25, :fill)
     
     sethue(julia_green)
     circle(Point(830, 30), 25, :fill)
@@ -36,8 +36,8 @@ function draw_full(type)
     finish()
 end
 
-draw("png")
-draw("svg")
+draw_full("png")
+draw_full("svg")
 preview()
 
 
@@ -47,10 +47,10 @@ function draw_square(type)
     Drawing(currentwidth, currentheight, "logo_square.$type")
 
     sethue(julia_red)
-    circle(Point(90, 30), 25, :fill)
+    circle(Point(85, 30), 25, :fill)
 
     sethue(julia_purple)
-    circle(Point(165, 30), 25, :fill)
+    circle(Point(160, 30), 25, :fill)
 
 
     # origin()
