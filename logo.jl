@@ -5,10 +5,10 @@ const julia_purple  = (0.584, 0.345, 0.698)
 const julia_green   = (0.22, 0.596, 0.149)
 const julia_red     = (0.796, 0.235, 0.2)
 
-function draw()
+function draw(type)
     currentwidth = 900 # pts
     currentheight = 250 # pts
-    Drawing(currentwidth, currentheight, "logo.svg")
+    Drawing(currentwidth, currentheight, "logo.$type")
 
     sethue(julia_red)
     circle(Point(45, 30), 25, :fill)
@@ -36,5 +36,6 @@ function draw()
     finish()
 end
 
-draw()
+draw("png")
+draw("svg")
 preview()
